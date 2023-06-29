@@ -28,18 +28,18 @@ class UserRouter {
       }
     });
 
-    router.post('/register', (Request request) async {
-      final body = await RegisterRequest.fromRequest(request);
+    // router.post('/register', (Request request) async {
+    //   final body = await RegisterRequest.fromRequest(request);
 
-      try {
-        await User_.fromRegisterRequest(body);
-        return Response(201);
-      } on UsernameTakenException catch (e) {
-        return Response(409, body: e.message);
-      } on PasswordValidationException catch (e) {
-        return Response(409, body: e.message);
-      }
-    });
+    //   try {
+    //     await User_.fromRegisterRequest(body);
+    //     return Response(201);
+    //   } on UsernameTakenException catch (e) {
+    //     return Response(409, body: e.message);
+    //   } on PasswordValidationException catch (e) {
+    //     return Response(409, body: e.message);
+    //   }
+    // });
 
     return router;
   }
