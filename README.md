@@ -2,6 +2,8 @@
 
 This is the companion app for the iOS/Android Diffu app.
 
+Try the beta on [TestFlight](https://testflight.apple.com/join/5yiFZ37Z)
+
 ## Getting Started
 
 1. Download the app from the [releases page](https://github.com/vleeuwenmenno/ssdc_companion_api/releases).
