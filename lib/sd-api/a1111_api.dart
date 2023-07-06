@@ -5,7 +5,7 @@ class A1111Api {
 
   String getHost() => _host;
 
-  Uri getApiUrl([String path = '']) => Uri.parse('$_host/sdapi/v1/$path');
+  Uri getApiUrl([String path = '']) => Uri.parse('$_host$path');
 
   Map<String, String> getHeaders({bool post = true}) {
     final headers = <String, String>{};

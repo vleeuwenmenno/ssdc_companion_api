@@ -100,10 +100,10 @@ void main(List<String> args) async {
         await startApp();
       } else {
         print(python);
-        ask('...');
+        ask('Press to continue ...');
       }
     }
-    ask('...');
+    ask('Press to continue  ...');
   }
 }
 

@@ -1,6 +1,6 @@
 name: ssdc_companion_api
 description: A bridge between A1111s Stable Diffusion WebUI API and the SSDC app.
-version: 1.0.0
+version: 1.0.1
 
 environment:
   sdk: ^3.0.5

@@ -13,8 +13,9 @@ class StableDiffusionRouter {
 
     router.post('/<route>', (Request req, String route) async {
       final api = serviceCollection.get<A1111Api>();
-      final path = api.getApiUrl(route);
-      print('Passing ${req.requestedUri} ${req.method} to ${api.getApiUrl(route)}');
+      final path = api.getApiUrl('${req.handlerPath}$route');
+
+      print('Passing ${req.requestedUri} ${req.method} to $path');
 
       final client = http.Client();
       final request = http.Request('POST', path)
@@ -22,23 +23,36 @@ class StableDiffusionRouter {
         ..body = await req.readAsString();
       final streamedResponse = await client.send(request);
       final responseBody = jsonDecode(await streamedResponse.stream.bytesToString());
+      print('Returning with response ${streamedResponse.statusCode} body:');
+      printLimitedString(responseBody);
 
       return Response(streamedResponse.statusCode, body: jsonEncode(responseBody));
     });
 
     router.get('/<route>', (Request req, String route) async {
       final api = serviceCollection.get<A1111Api>();
-      final path = api.getApiUrl(route);
-      print('Passing ${req.requestedUri} ${req.method} to ${api.getApiUrl(route)}');
+      final path = api.getApiUrl('${req.handlerPath}$route');
+
+      print('Passing ${req.requestedUri} ${req.method} to $path');
 
       final client = http.Client();
       final request = http.Request('GET', path)..headers.addAll(req.headers);
       final streamedResponse = await client.send(request);
       final responseBody = jsonDecode(await streamedResponse.stream.bytesToString());
+      print('Returning with response ${streamedResponse.statusCode} body:');
+      printLimitedString(responseBody);
 
       return Response(streamedResponse.statusCode, body: jsonEncode(responseBody));
     });
 
     return router;
+  }
+
+  void printLimitedString(String input) {
+    if (input.length <= 1000) {
+      print(input);
+    } else {
+      print(input.substring(0, 1000));
+    }
   }
 }
