@@ -1,11 +1,7 @@
 import 'dart:convert';
 
-import 'package:ssdc_companion_api/exceptions/password_validation_exception.dart';
 import 'package:ssdc_companion_api/exceptions/user_suspended_exception.dart';
-import 'package:ssdc_companion_api/exceptions/username_taken_exception.dart';
 import 'package:ssdc_companion_api/helpers/login/session.helpers.dart';
-import 'package:ssdc_companion_api/helpers/user/user.helpers.dart';
-import 'package:ssdc_companion_api/routes/models/register_request.dart';
 import 'package:shelf/shelf.dart';
 import 'package:shelf_router/shelf_router.dart';
 

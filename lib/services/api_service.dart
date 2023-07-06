@@ -30,6 +30,7 @@ class ApiService {
     app.mount('/user/', UserRouter().router);
     app.mount('/user/manage', await authenticatedRouter(UserManagementRouter().router));
     app.mount('/sdapi/v1', await authenticatedRouter(StableDiffusionRouter().router));
+    app.mount('/internal', await authenticatedRouter(StableDiffusionRouter().router));
 
     if (dotEnv['DEBUG'] != 'FALSE') {
       app.mount('/debug/', await authenticatedRouter(DebugRouter().router));
