@@ -24,7 +24,10 @@ class StableDiffusionRouter {
       final streamedResponse = await client.send(request);
       final responseBody = jsonDecode(await streamedResponse.stream.bytesToString());
       print('Returning with response ${streamedResponse.statusCode} body:');
-      printLimitedString(responseBody);
+      try {
+        printLimitedString(jsonEncode(responseBody));
+        // ignore: empty_catches
+      } catch (e) {}
 
       return Response(streamedResponse.statusCode, body: jsonEncode(responseBody));
     });
@@ -40,7 +43,10 @@ class StableDiffusionRouter {
       final streamedResponse = await client.send(request);
       final responseBody = jsonDecode(await streamedResponse.stream.bytesToString());
       print('Returning with response ${streamedResponse.statusCode} body:');
-      printLimitedString(responseBody);
+      try {
+        printLimitedString(jsonEncode(responseBody));
+        // ignore: empty_catches
+      } catch (e) {}
 
       return Response(streamedResponse.statusCode, body: jsonEncode(responseBody));
     });
