@@ -56,6 +56,6 @@ This document describes our Privacy Policy and Terms of Use, setting out how we 
 
 11.1. If you have any questions or suggestions about our Privacy Policy and Terms of Use, do not hesitate to contact us.
 
-Email: menno@vleeuwen.me
+Email: diffu@vleeuwen.me
 
 Last updated: 2023-07-08
