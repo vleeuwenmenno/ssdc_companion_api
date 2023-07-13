@@ -9,3 +9,7 @@ isar/*.isar-lck
 isar/default.isar.lock
 
 build/
+
+
+*.g.dart
+*.freezed.dart
