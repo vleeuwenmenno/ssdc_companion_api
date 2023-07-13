@@ -13,3 +13,4 @@ build/
 
 *.g.dart
 *.freezed.dart
+lib/models/login/session.g.dart

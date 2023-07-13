@@ -12,7 +12,7 @@ class RootRouter {
     });
 
     router.get('/companion', (Request request) async {
-      return Response(200, body: jsonEncode({'ssdc_companion_api': 'a1111', 'version': '1.0.1'}));
+      return Response(200, body: jsonEncode({'ssdc_companion_api': 'a1111', 'version': '1.0.3'}));
     });
 
     return router;

@@ -8,22 +8,46 @@ import 'package:ssdc_companion_api/services/api_service.dart';
 
 import 'package:http/http.dart' as http;
 
+final Map<String, Map<String, dynamic>> ipMap = {};
+
 class StableDiffusionRouter {
   Router get router {
     final router = Router();
 
     router.post('/<route>', (Request req, String route) async {
+      final clientAddress = (req.context['shelf.io.connection_info'] as HttpConnectionInfo?)?.remoteAddress.address;
       final api = serviceCollection.get<A1111Api>();
       final path = api.getApiUrl('${req.handlerPath}$route');
       var body = await req.readAsString();
 
-      if (path.path.endsWith('/sdapi/v1/txt2img') && File('./filters.json').existsSync()) {
-        final filters = jsonDecode(File('./filters.json').readAsStringSync());
+      if (path.path.endsWith('/sdapi/v1/txt2img') && File('./options.json').existsSync()) {
+        final options = jsonDecode(File('./options.json').readAsStringSync());
+        final countLimit = options['txt2ImgRateLimitCount'] ?? 5;
+        final timeLimit = options['txt2ImgRateLimitHours'] ?? 1;
+
+        if (countLimit != -1) {
+          if (clientAddress != null) {
+            if (ipMap.containsKey(clientAddress)) {
+              if (ipMap[clientAddress]?['count'] >= countLimit &&
+                  DateTime.now().difference(ipMap[clientAddress]?['lastRequest']).inHours < timeLimit) {
+                return Response(429, body: 'Too many requests');
+              }
+            }
+
+            if (!ipMap.containsKey(clientAddress)) {
+              ipMap[clientAddress] = {'count': 0, 'lastRequest': DateTime.now()};
+            } else {
+              ipMap[clientAddress]?['count']++;
+              ipMap[clientAddress]?['lastRequest'] = DateTime.now();
+            }
+          }
+        }
+
         final ttiRequest = jsonDecode(body);
         String prompt = ttiRequest['prompt'];
         String negativePrompt = ttiRequest['negative_prompt'];
 
-        for (final filter in filters['banned_words']) {
+        for (final filter in options['banned_words']) {
           if (prompt.contains(filter)) {
             print('Filtering banned word $filter from positive prompt');
           }
@@ -34,7 +58,7 @@ class StableDiffusionRouter {
           negativePrompt = negativePrompt.replaceAll(filter, '');
         }
 
-        for (final filter in filters['banned_words_positive']) {
+        for (final filter in options['banned_words_positive']) {
           if (prompt.contains(filter)) {
             print('Filtering positive banned word $filter from positive prompt');
             negativePrompt = '$filter,$negativePrompt';
@@ -42,15 +66,15 @@ class StableDiffusionRouter {
           prompt = prompt.replaceAll(filter, '');
         }
 
-        for (final filter in filters['banned_words_negative']) {
+        for (final filter in options['banned_words_negative']) {
           if (negativePrompt.contains(filter)) {
             print('Filtering negative banned word $filter from negative prompt');
           }
           negativePrompt = negativePrompt.replaceAll(filter, '');
         }
 
-        prompt = filters['positiveAddition'] + prompt;
-        negativePrompt = filters['negativeAddition'] + negativePrompt;
+        prompt = options['positiveAddition'] + prompt;
+        negativePrompt = options['negativeAddition'] + negativePrompt;
 
         ttiRequest['prompt'] = prompt;
         ttiRequest['negative_prompt'] = negativePrompt;

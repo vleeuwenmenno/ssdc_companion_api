@@ -9,7 +9,7 @@ cd ..
 copy .env.example build\ssdc_companion_server\
 copy bin\isar.dll build\ssdc_companion_server\
 copy README.md build\ssdc_companion_server\
-copy filters.json build\ssdc_companion_server\
+copy options.json build\ssdc_companion_server\
 mkdir build\ssdc_companion_server\isar\
 copy isar\.gitkeep build\ssdc_companion_server\isar\
 
