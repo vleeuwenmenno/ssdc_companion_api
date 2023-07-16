@@ -1,16 +1,12 @@
-# ssdc_companion_ui
+# Diffu Companion
 
-A new Flutter project.
+This is the Companion application for the iOS & Android Diffu app.
+        
+<a href="https://apps.apple.com/app/diffu/id6450484413"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" width="175"/></a>
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Download the Companion from the [releases page](https://github.com/vleeuwenmenno/ssdc_companion_api/releases).
+2. Extract the app to a folder of your choice.
+3. Run the exe/executable depending on your operating system.
+4. Follow the instructions in the Diffu app on iOS or Android and on the Diffu Companion.
