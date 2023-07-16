@@ -1,0 +1,117 @@
+{
+    "time": "2023-07-16T19:04:36.533967",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Git v2.41.0.windows.2",
+    "repeatCount": 1
+},
+df0-bfce-4965-9d76-8da7603aca5c-16-7-2023.json'",
+    "repeatCount": 1
+},
+{
+    "time": "2023-07-16T19:04:39.803129",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Git v2.41.0.windows.2",
+    "repeatCount": 1
+},
+{
+    "time": "2023-07-16T19:04:39.900714",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Git v2.41.0.windows.2",
+    "repeatCount": 2
+},
+{
+    "time": "2023-07-16T19:04:39.919714",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Git v2.41.0.windows.2",
+    "repeatCount": 3
+},
+{
+    "time": "2023-07-16T19:04:45.658069",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Repository successfully cloned and moved to ./a1111",
+    "repeatCount": 1
+},
+{
+    "time": "2023-07-16T19:04:45.740074",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Git v2.41.0.windows.2",
+    "repeatCount": 2
+},
+{
+    "time": "2023-07-16T19:04:45.781072",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Git v2.41.0.windows.2",
+    "repeatCount": 4
+},
+{
+    "time": "2023-07-16T19:04:45.786070",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Git v2.41.0.windows.2",
+    "repeatCount": 5
+},
+{
+    "time": "2023-07-16T19:05:01.012930",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Git v2.41.0.windows.2",
+    "repeatCount": 6
+},
+{
+    "time": "2023-07-16T19:05:03.383198",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "File downloaded, extracted, and cleaned up successfully",
+    "repeatCount": 1
+},
+{
+    "time": "2023-07-16T19:05:03.429201",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Python v3.10.11",
+    "repeatCount": 2
+},
+{
+    "time": "2023-07-16T19:05:03.436198",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Python v3.10.11",
+    "repeatCount": 3
+},
+ 1
+},
+{
+    "time": "2023-07-16T19:05:03.452201",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Python v3.10.11",
+    "repeatCount": 2
+},
+{
+    "time": "2023-07-16T19:05:03.457199",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Git v2.41.0.windows.2",
+    "repeatCount": 1
+},
+{
+    "time": "2023-07-16T19:05:03.472199",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Git v2.41.0.windows.2",
+    "repeatCount": 2
+},
+{
+    "time": "2023-07-16T19:05:10.170414",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Git v2.41.0.windows.2",
+    "repeatCount": 4
+},

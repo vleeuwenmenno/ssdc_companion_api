@@ -1,0 +1,80 @@
+{
+    "time": "2023-07-16T19:23:07.899972",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Git v2.41.0.windows.2",
+    "repeatCount": 1
+},
+5df-7721-4023-9bb4-b45b71bcfc57-16-7-2023.json'",
+    "repeatCount": 1
+},
+{
+    "time": "2023-07-16T19:23:12.954647",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Git v2.41.0.windows.2",
+    "repeatCount": 1
+},
+{
+    "time": "2023-07-16T19:23:12.961645",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Git v2.41.0.windows.2",
+    "repeatCount": 2
+},
+{
+    "time": "2023-07-16T19:23:13.009645",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Git v2.41.0.windows.2",
+    "repeatCount": 3
+},
+{
+    "time": "2023-07-16T19:24:04.711781",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Git v2.41.0.windows.2",
+    "repeatCount": 4
+},
+{
+    "time": "2023-07-16T19:24:04.718781",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Python v3.10.11",
+    "repeatCount": 1
+},
+{
+    "time": "2023-07-16T19:24:04.724784",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Git v2.41.0.windows.2",
+    "repeatCount": 1
+},
+{
+    "time": "2023-07-16T19:24:04.737784",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Python v3.10.11",
+    "repeatCount": 1
+},
+{
+    "time": "2023-07-16T19:24:04.750783",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Git v2.41.0.windows.2",
+    "repeatCount": 1
+},
+{
+    "time": "2023-07-16T19:24:06.345976",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Python v3.10.11",
+    "repeatCount": 1
+},
+{
+    "time": "2023-07-16T19:24:06.377976",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Git v2.41.0.windows.2",
+    "repeatCount": 1
+},

@@ -1,0 +1,26 @@
+{
+    "time": "2023-07-16T19:10:54.137862",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Python v3.10.11",
+    "repeatCount": 1
+},
+ 1
+},
+99a-b42c-4fe2-a935-d3c34bb724d3-16-7-2023.json'",
+    "repeatCount": 1
+},
+{
+    "time": "2023-07-16T19:10:54.871003",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Python v3.10.11",
+    "repeatCount": 2
+},
+{
+    "time": "2023-07-16T19:10:54.904004",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Git v2.41.0.windows.2",
+    "repeatCount": 1
+},

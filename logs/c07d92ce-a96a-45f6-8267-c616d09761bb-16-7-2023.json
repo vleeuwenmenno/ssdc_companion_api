@@ -1,0 +1,45 @@
+{
+    "time": "2023-07-16T19:21:01.093908",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Git v2.41.0.windows.2",
+    "repeatCount": 1
+},
+2ce-a96a-45f6-8267-c616d09761bb-16-7-2023.json'",
+    "repeatCount": 1
+},
+{
+    "time": "2023-07-16T19:21:02.108762",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Python v3.10.11",
+    "repeatCount": 1
+},
+{
+    "time": "2023-07-16T19:21:02.141171",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Git v2.41.0.windows.2",
+    "repeatCount": 1
+},
+{
+    "time": "2023-07-16T19:22:32.639084",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Kill process 20440",
+    "repeatCount": 1
+},
+{
+    "time": "2023-07-16T19:22:32.746697",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Kill process 31160",
+    "repeatCount": 1
+},
+{
+    "time": "2023-07-16T19:22:32.855695",
+    "job": "CONSOLE",
+    "event": "MSG",
+    "message": "Kill parent process 24752",
+    "repeatCount": 1
+},
